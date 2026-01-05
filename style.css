@@ -1,0 +1,34 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --accent: #0366d6;
+  --danger-bg: #ffebeb; /* Açık Kırmızı Arka Plan */
+  --danger-text: #c92a2a; /* Koyu Kırmızı Yazı */
+}
+
+body { font-family: sans-serif; background: var(--bg); padding: 20px; }
+main { max-width: 800px; margin: 0 auto; background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+/* Tablo Ayarları */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+th { color: #555; font-size: 0.9em; text-transform: uppercase; }
+
+/* Resim Ayarı */
+td img { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; display: block; }
+
+/* --- KRİTİK KISIM: STOK AZ UYARISI --- */
+/* "low" sınıfına sahip satırın içindeki TÜM hücreleri boya */
+tr.low td {
+  background-color: var(--danger-bg) !important;
+  color: var(--danger-text) !important;
+  border-bottom: 1px solid #c03838;
+}
+
+/* Form Ayarları */
+.add-form { margin-top: 20px; padding: 15px; background: #f9fafb; border-radius: 8px; }
+#addForm { display: flex; gap: 10px; align-items: flex-end; }
+#addForm label { flex: 1; font-size: 13px; color: #666; }
+#addForm input { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; margin-top: 5px; }
+button { padding: 10px 20px; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; }
+button:hover { opacity: 0.9; }

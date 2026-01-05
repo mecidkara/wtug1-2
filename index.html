@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kafe Stok Yönetimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Kafe Stok Yönetimi</h1>
+
+    <div class="controls">
+      <label for="search">Ara:</label>
+      <input id="search" type="search" placeholder="Ürün ara...">
+    </div>
+
+    <table id="urunTable">
+      <thead>
+        <tr>
+          <th>Resim</th>
+          <th>Ürün Adı</th>
+          <th>Kategori</th>
+          <th>Stok</th>
+        </tr>
+      </thead>
+      <tbody>
+        </tbody>
+    </table>
+
+    <section class="add-form">
+      <h2>Yeni Ürün Ekle</h2>
+      <form id="addForm">
+        <label>Ürün Adı<input type="text" id="ad" required placeholder="Ör: Çay"></label>
+        <label>Stok<input type="number" id="stok" min="0" required placeholder="0"></label>
+        <button type="submit">Ekle</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
